@@ -16,6 +16,7 @@
 		B0D2CA982A56DA71005F32A7 /* Image_RecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2CA972A56DA71005F32A7 /* Image_RecognizerTests.swift */; };
 		B0D2CAA22A56DA71005F32A7 /* Image_RecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2CAA12A56DA71005F32A7 /* Image_RecognizerUITests.swift */; };
 		B0D2CAA42A56DA71005F32A7 /* Image_RecognizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D2CAA32A56DA71005F32A7 /* Image_RecognizerUITestsLaunchTests.swift */; };
+		B0D2CAB12A56E713005F32A7 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B0D2CAB02A56E713005F32A7 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B0D2CA9D2A56DA71005F32A7 /* Image RecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image RecognizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D2CAA12A56DA71005F32A7 /* Image_RecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_RecognizerUITests.swift; sourceTree = "<group>"; };
 		B0D2CAA32A56DA71005F32A7 /* Image_RecognizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_RecognizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0D2CAB02A56E713005F32A7 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B0D2CA892A56DA71005F32A7 /* Assets.xcassets */,
 				B0D2CA8B2A56DA71005F32A7 /* LaunchScreen.storyboard */,
 				B0D2CA8E2A56DA71005F32A7 /* Info.plist */,
+				B0D2CAB02A56E713005F32A7 /* MobileNetV2.mlmodel */,
 			);
 			path = "Image Recognizer";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				B0D2CA852A56DA70005F32A7 /* ViewController.swift in Sources */,
 				B0D2CA812A56DA70005F32A7 /* AppDelegate.swift in Sources */,
+				B0D2CAB12A56E713005F32A7 /* MobileNetV2.mlmodel in Sources */,
 				B0D2CA832A56DA70005F32A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
