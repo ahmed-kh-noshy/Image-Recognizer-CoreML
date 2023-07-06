@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func cameraButton(_ sender: UIBarButtonItem) {
-        print("test...")
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = false
+        present(imagePicker, animated: true)
     }
     
     
@@ -27,3 +31,12 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info:[UIImagePickerController.InfoKey: Any]) {
+        imageView.image = info[.originalImage] as? UIImage
+        picker.dismiss(animated: true)
+    }
+    
+}
