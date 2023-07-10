@@ -50,7 +50,13 @@ extension ViewController: UIImagePickerControllerDelegate,UINavigationController
         
         let request = VNCoreMLRequest(model: model!) { (request, error) in
             let results = request.results as? [VNClassificationObservation]
-            print(results?.first)
+            print(results?.first?.identifier as Any)
+            let alert = UIAlertController(title: "The Image You Picked Is ", message: results?.first?.identifier, preferredStyle: UIAlertController.Style.alert)
+            
+            self.present(alert, animated: true) {
+                    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+                alert.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+            }
         }
         
         let handler = VNImageRequestHandler(ciImage: pickedImage)
@@ -59,6 +65,9 @@ extension ViewController: UIImagePickerControllerDelegate,UINavigationController
         }catch {
             print("error")
         }
+    }
+    @objc func dismissAlertController(){
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

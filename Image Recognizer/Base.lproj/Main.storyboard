@@ -17,20 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vbF-7K-tbi">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="646"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vbF-7K-tbi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CAY-jg-BQL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vbF-7K-tbi" secondAttribute="trailing" id="Te2-c3-vZw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vbF-7K-tbi" secondAttribute="bottom" id="Xkn-9e-bjq"/>
-                            <constraint firstItem="vbF-7K-tbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bau-4Q-Kti"/>
+                            <constraint firstItem="vbF-7K-tbi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4aO-cM-mlg"/>
+                            <constraint firstItem="vbF-7K-tbi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QvA-Nb-Vjq"/>
+                            <constraint firstItem="vbF-7K-tbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YEQ-h4-iGS"/>
+                            <constraint firstItem="vbF-7K-tbi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eWU-fh-bgB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QDf-lR-fwb">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="qdn-m1-kPv">
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <action selector="cameraButton:" destination="BYZ-38-t0r" id="pIW-Yl-NRg"/>
                             </connections>
@@ -64,6 +65,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
